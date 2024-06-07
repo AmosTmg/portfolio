@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    background-color: #BBDED6;
+}
+
+.intro-main{
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    height: 100vh;
+    gap:0.5rem;
+}
+
+.intro-main .item-1{ 
+    margin: 0;
+    grid-area: 3/6/5/8;
+    font-size: 3rem;
+    font-family: caveat, cursive;
+    font-weight: 800;
+    text-align: center;
+    color: #006769;
+    padding-right: 10px;
+} 
+
+ .intro-main .item-2{
+    grid-area: 5/6/7/8;
+    height: 200px;
+    width: 200px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+}
+
+.intro-main .item-3{
+    grid-area: 7/5/8/9;
+    text-align: center;
+    font-weight: 400;
+    font-family: Atkinson Hyperlegible;
+    color: #006769;
+    font-size: 2rem ;
+    margin: 0;
+}
+
+.intro-main .item-4{
+    height: 100%;
+    width: 110%;
+    grid-area: 5/2/6/4;
+}
+
+.intro-main .item-5{
+    height: 100%;
+    width: 110%;
+    grid-area: 8/10/11/12;
+}
+
+.info{
+    display:grid;
+    grid-template-rows: repeat(15, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    background-color: #F8FAF0;
+    gap:0.2rem;
+    height: 120vh;
+    padding-bottom: 100px;
+}
+
+.info > *{
+    text-align: center;
+}
+
+.info p{
+    margin: 0;
+}
+
+/* 2nd div -info item 1 */
+.info .item-1{
+    grid-area: 3/4/5/10 ;
+    text-align: center;
+    
+}
+.info .item-1 p{
+   margin: 0;
+   font-size: 1.7rem;
+   font-family: atkinson hyperlegible;
+   font-weight: 500;
+}
+
+
+/* 2nd div -info item 2 */
+.info .item-2{
+    grid-area: 5/4/7/10;
+}
+.info .item-2 p{
+    font-size: 5rem;
+    font-family: caveat, cursive;
+    font-weight: 800;
+}
+
+
+
+/* 2nd div -info item 3 */
+.info .item-3{
+    grid-row-start: 8;
+    grid-row-end: 10;
+    grid-column-start: 4;
+    grid-column-end: 10;
+    text-align: center;
+}
+.info .item-3 span{
+    font-weight:900;
+}
+.info .item-3 p{
+    font-family: atkinson hyperlegible;
+    font-size: 1.9rem;
+}
+
+
+/*2nd div -info item 4*/
+.info .item-4{
+    grid-area: 13/4/15/10;
+    text-align: center;
+}
+.info .item-4 span{
+    font-weight: 900;
+}
+.info .item-4 p{
+    font-family: atkinson hyperlegible;
+    font-size: 1.9rem;
+}
+
+/* 3rd div  -footer*/
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(6, 1fr);
+    padding-top: 50px;
+}
+
+.footer p{
+    margin:0;
+    text-align: center;
+}
+
+/* 3rd div  -footer item-1*/
+.footer .item-1{
+    grid-area: 2/4/4/10;
+}
+.footer .item-1 p{
+    color: #006769;
+    font-size: 1.9rem;
+    font-family: atkinson hyperlegible;
+}
+.footer span{
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+/* row 5 6 col 3 11 */
+/* 3rd div -footer item-2 */
+
+.footer .item-2{
+    grid-area: 5/3/6/11;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .item-2 a{
+    font-family: atkinson hyperlegible;
+    color: #006769;
+    font-size: 1.2rem;
+}
+.footer a:hover{
+    color: #F8FAF0;
+}
